@@ -185,6 +185,17 @@
       color: var(--fg);
     }
 
+    a.project-name {
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    a.project-name:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
     .project-role {
       font-size: 13px;
       font-weight: 500;
@@ -465,6 +476,31 @@
 
       <div class="project">
         <div class="project-header">
+          <a class="project-name" href="https://paytowin.club/" target="_blank" rel="noopener noreferrer">PayToWin</a>
+          <span class="project-role">Full-Stack Software Engineer · Solo Project</span>
+        </div>
+        <div class="project-context">Online auction platform for the Ukrainian TCG community · Apr 2026 — Present</div>
+        <ul class="project-bullets">
+          <li>Designed, built, and deployed the entire platform solo using Next.js, NestJS, PostgreSQL, Docker, and Hetzner Cloud</li>
+          <li>Built auction and deal state machines with anti-snipe extensions, Buy Now, disputes, bilateral reviews, moderation, and real-time notifications</li>
+          <li>Established an AI-agent-driven workflow using Claude Code, reusable agent skills, MCP integrations, TDD, and documented domain and architecture decisions</li>
+        </ul>
+        <div class="tags">
+          <span class="tag">TypeScript</span>
+          <span class="tag">Next.js</span>
+          <span class="tag">React</span>
+          <span class="tag">NestJS</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Prisma</span>
+          <span class="tag">TanStack Query</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Claude Code</span>
+          <span class="tag">MCP</span>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
           <span class="project-name">Eatclub</span>
           <span class="project-role">Lead Software Engineer</span>
         </div>
@@ -508,26 +544,6 @@
           <span class="tag">Recharts</span>
           <span class="tag">React Hook Form</span>
           <span class="tag">Zod</span>
-        </div>
-      </div>
-
-      <div class="project">
-        <div class="project-header">
-          <span class="project-name">Molo</span>
-          <span class="project-role">Senior Frontend Engineer</span>
-        </div>
-        <div class="project-context">Fully digital mortgage lender, UK</div>
-        <ul class="project-bullets">
-          <li>Built application forms for customers and brokers with Onfido identity verification</li>
-          <li>Developed landing pages that drove customer acquisition and conversions</li>
-          <li>Rewrote legacy codebase for maintainability and performance</li>
-        </ul>
-        <div class="tags">
-          <span class="tag">React</span>
-          <span class="tag">Vue.js</span>
-          <span class="tag">Next.js</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">Onfido</span>
         </div>
       </div>
 
